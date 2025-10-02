@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- El <title> aparece en la pestaña del navegador -->
+    <title>App del Clima</title>
+    <!-- Enlazamos nuestra hoja de estilos CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Contenedor principal para centrar y dar estilo -->
+    <div class="container">
+        <h1>¿Cómo anda el clima?</h1>
+
+        <!-- Grupo de entradas para el buscador -->
+        <div class="input-group">
+            <input type="text" id="cityInput" placeholder="Nombre de la ciudad..." autocomplete="off" aria-autocomplete="list" aria-haspopup="true">
+            <button id="getWeatherBtn">Obtener Clima</button>
+        </div>
+
+        <!-- Contenedor para mostrar las sugerencias -->
+        <ul id="suggestionsList" role="listbox" aria-label="Sugerencias de localidades"></ul>
+
+        <!-- Div para mostrar mensajes de error -->
+        <div id="errorMessage"></div>
+
+        <!-- Contenedor para mostrar la información del clima -->
+        <div id="weatherInfo">
+            <!-- Aquí JavaScript insertará los datos dinámicamente -->
+        </div><br>
+
+    </div>
+
+    <!-- Enlazamos nuestro script de JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
